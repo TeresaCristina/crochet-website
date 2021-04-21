@@ -1,0 +1,52 @@
+/*Website Crochet Client - Teresa Costa
+  Created: 20, April, 2021*/
+
+.back-footer {
+    background: var(--misty-rose)!important;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    color: var(--charm-pink)!important;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: var(--charm-pink)!important;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Social Media*/
+.ft-social {
+    padding: 0 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+    color:var(--charm-pink);
+}
+.ft-social-list li {
+    font-size: 0.750rem;
+}
+
+/*Legal Stuff*/
+.ft-legal {
+    padding: 0 0.9375rem;
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;    
+}
