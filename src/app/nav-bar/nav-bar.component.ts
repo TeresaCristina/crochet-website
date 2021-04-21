@@ -10,12 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  public toggleFlag: boolean = false;
+  storeLink: string = `https://www.etsy.com/ca/shop/ItchToStitchByTeresa?ref=profile_header`;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  public showDropdown() { this.toggleFlag = !this.toggleFlag; }
 }
