@@ -8,6 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HomeComponent } from './home/home.component';
+
+import { YouTubePlayerModule } from "@angular/youtube-player";
+import { HomeSectionComponent } from './home/home-section/home-section.component';
 
 
 
@@ -15,7 +19,9 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    HomeSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +31,7 @@ import { environment } from '../environments/environment';
       enabled: environment.production,
       registrationStrategy: 'registerWhenStable:30000'
     }),
+    YouTubePlayerModule
     
   ],
   providers: [],
