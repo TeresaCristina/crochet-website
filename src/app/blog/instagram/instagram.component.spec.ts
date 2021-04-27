@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeSectionComponent } from './home-section.component';
+import { InstagramComponent } from './instagram.component';
 
-describe('HomeSectionComponent', () => {
-  let component: HomeSectionComponent;
-  let fixture: ComponentFixture<HomeSectionComponent>;
+describe('InstagramComponent', () => {
+  let component: InstagramComponent;
+  let fixture: ComponentFixture<InstagramComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeSectionComponent ]
+      declarations: [ InstagramComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeSectionComponent);
+    fixture = TestBed.createComponent(InstagramComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

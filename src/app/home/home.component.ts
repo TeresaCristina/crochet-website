@@ -2,7 +2,8 @@
   Created: 26, April, 2021*/
 
 import { Component, OnInit } from '@angular/core';
-
+import * as links from '../../assets/global/links';
+import * as figures from '../../assets/global/figures';
 
 @Component({
   selector: 'app-home',
@@ -11,12 +12,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  storeLink: string = `https://www.etsy.com/ca/shop/ItchToStitchByTeresa?ref=profile_header`;
-  storeLogo: string = `assets/images/itch-to-stitch-by-teresa-logo.gif`;
+  storeLink: string = links.storeLink;
+  storeLogo: string = figures.storeLogo;
 
   constructor(){}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

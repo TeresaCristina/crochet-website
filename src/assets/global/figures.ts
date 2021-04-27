@@ -1,5 +1,9 @@
 'use strict';
 
+export const storeLogo = `assets/images/itch-to-stitch-by-teresa-logo.gif`;
+
+export const blogBanner = `assets/images/logo-no-background.png`;
+
 export const figLinks = ["assets/images/itch-to-stitch-logo-static.jpg",
     "https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23021_hires.jpg",
     "https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23002_hires.jpg",

@@ -2,64 +2,49 @@
   Created: 26, April, 2021*/
   
   /* Top Logo Banner */
-  .banner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    align-items: center;
-    padding: 5vh 10vw;
-    h1 > img {
-      height: 30vh;
-    }
-    article {
-      p {
-        font-size: 1.5rem;
-      }
-      a {
-        padding: 1rem;
-        margin-top: .75rem;
-      }
-    }
-  }
+  
+a {
+  background-color: var(--charm-pink);
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
 
+a:hover {
+  opacity: .6;
+}
+
+/* Styles for the banner image */
+.banner {
+  margin: 15vh 10vw 0 10vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  align-items: center;
+}
+
+img {
+  height: 50vh;
+}
+
+.banner > article {
+  p {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
   a {
-    background-color: var(--charm-pink);
-    text-decoration: none;
-    color: white;
-    border-radius: .25rem;
-    text-align: center;
-    display: inline-block;
-    transition: all .3s;
+    padding: 1rem;
+    margin-top: .75rem;
   }
-  a:hover {
-    opacity: .6;
-  }
-  
-  /* Picture Cards */
-  .card-sections > ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 0.5vw;
-    list-style-type:none;
-    li {
-      border: 1px solid var(--alabastar);
-      border-radius: 1rem;
-      width: 30vw;
-      height: 20vw;
-    }
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .card-sections {
-      padding-bottom: 35vw;
-        ul > li {
-          border: 1px solid var(--alabastar);
-          border-radius: 1rem;
-          width: 85vw;
-          height: 55vw;
-          margin-top: 5vw;
-        }
-    }
-  }
-  
- 
+}
 
+@media only screen and (max-device-width: 480px) {
+  .banner {
+    margin: 3vh 5vw 20vh 5vw;
+    article {
+      text-align: center;
+    }
+  }
+}

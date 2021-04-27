@@ -1,14 +1,14 @@
-
-<section class="gallery">
+<main class="wrapper">
+  <section class="gallery">
     <ul class="gallery__list" *ngIf="figLinks.length > 0">
       <li class="media" *ngFor="let link of figLinks">
         <div class="letters-layer">
-            <p>Crochet</p>
-          </div>
+          <p>Crochet</p>
+        </div>
         <figure>
           <img src={{link}} alt="Picture Planet">
         </figure>
       </li>
     </ul>
-</section>
-
+  </section>
+</main>

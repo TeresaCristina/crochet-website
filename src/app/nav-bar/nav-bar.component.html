@@ -24,7 +24,7 @@
                 <a class="nav-link" href={{storeLink}}>Etsy Store</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="'/gallery'" >Blog</a>
+                <a class="nav-link" [routerLink]="'/blog'" >Blog</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -32,10 +32,10 @@
                     Gallery
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item " href="#">Crochet Rugs</a>
-                    <a class="dropdown-item " href="#">Crochet Basket</a>
+                    <a class="dropdown-item " [routerLink]="'/gallery'">Crochet Rugs</a>
+                    <a class="dropdown-item " [routerLink]="'/gallery'">Crochet Basket</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item " href="#">All</a>
+                    <a class="dropdown-item " [routerLink]="'/gallery'">All</a>
                 </div>
             </li>
         </ul>

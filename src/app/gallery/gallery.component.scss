@@ -1,8 +1,6 @@
 .gallery {
   padding: 2rem;
   padding-bottom: 10rem;
-
-  ul > li { list-style-type:none;}
 }
 
 .gallery > .gallery__list {
@@ -13,6 +11,7 @@
   grid-auto-flow: dense;
     li {
       border-radius: 1rem;
+      list-style-type:none;
     }
     li:nth-child(4n) {
       grid-column: span 2;
@@ -23,8 +22,6 @@
       grid-row: span 3;
     }
 }
-
-
 
 .gallery > .gallery__list > li > figure {
   height: 100%;

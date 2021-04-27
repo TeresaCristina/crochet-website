@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as figures from '../../assets/global/figures';
 
 @Component({
   selector: 'app-blog',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
+  blogBanner: string = figures.blogBanner;
   constructor() { }
 
   ngOnInit(): void {
