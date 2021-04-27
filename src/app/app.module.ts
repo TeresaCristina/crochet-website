@@ -10,11 +10,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { HomeSectionComponent } from './home/home-section/home-section.component';
-import { CardGalleryComponent } from './gallery/card-gallery/card-gallery.component';
-import{GalleryComponent} from './gallery/gallery.component'
-;
+import { GalleryComponent } from './gallery/gallery.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 
- 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,8 @@ import{GalleryComponent} from './gallery/gallery.component'
     HomeComponent,
     HomeSectionComponent,
     GalleryComponent,
-    CardGalleryComponent
+    BlogComponent,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,7 @@ import{GalleryComponent} from './gallery/gallery.component'
       enabled: environment.production,
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,23 +1,24 @@
 /*Website Crochet Client - Teresa Costa
   Created: 26, April, 2021*/
-  /* Header/Logo Title */
   
-  /* Top Banner */
+  /* Top Logo Banner */
   .banner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
     padding: 5vh 10vw;
-  }
-  .banner > h1 > img {
-    height: 30vh;
-  }
-  .banner > article > p {
-    font-size: 1.5rem;
-  }
-  .banner > article > a {
-    padding: 1rem;
-    margin-top: .75rem;
+    h1 > img {
+      height: 30vh;
+    }
+    article {
+      p {
+        font-size: 1.5rem;
+      }
+      a {
+        padding: 1rem;
+        margin-top: .75rem;
+      }
+    }
   }
 
   a {
@@ -33,32 +34,31 @@
     opacity: .6;
   }
   
-  /* Card Sections */
-
- 
+  /* Picture Cards */
   .card-sections > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 0.5vw;
     list-style-type:none;
+    li {
+      border: 1px solid var(--alabastar);
+      border-radius: 1rem;
+      width: 30vw;
+      height: 20vw;
+    }
   }
   
-  .card-sections > ul > li {
-    border: 1px solid var(--alabastar);
-    border-radius: .5rem;
-    width: 30vw;
-  }
-
   @media only screen and (max-width: 700px) {
-    .card-sections > ul > li {
-        border: 1px solid var(--alabastar);
-        border-radius: .5rem;
-        width: 85vw;
-        margin-top: 5vw;
-      }
-      .card-sections {
-        padding-bottom: 35vw;
-      }
+    .card-sections {
+      padding-bottom: 35vw;
+        ul > li {
+          border: 1px solid var(--alabastar);
+          border-radius: 1rem;
+          width: 85vw;
+          height: 55vw;
+          margin-top: 5vw;
+        }
+    }
   }
   
  
