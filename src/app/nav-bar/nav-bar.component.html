@@ -18,22 +18,24 @@
             </label>
             <!--Links-->
             <li class="nav-item active">
-                <a class="nav-link" [routerLink]="'/home'" >Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" [routerLink]="'/home'">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href={{storeLink}}>Etsy Store</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="'/blog'" >Blog</a>
+                <a class="nav-link" [routerLink]="'/blog'">Blog</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Gallery
+                    Inspirations
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item " [routerLink]="'/gallery'">Crochet Rugs</a>
-                    <a class="dropdown-item " [routerLink]="'/gallery'">Crochet Basket</a>
+                    <div 
+                        *ngFor="let category of figCategory">
+                        <a class="dropdown-item " [routerLink]="['/gallery', category]">{{category}}</a>
+                    </div>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item " [routerLink]="'/gallery'">All</a>
                 </div>

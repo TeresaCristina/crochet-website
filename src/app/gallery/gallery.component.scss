@@ -3,7 +3,7 @@
   padding-bottom: 10rem;
 }
 
-.gallery > .gallery__list {
+.gallery > .galleryList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-template-rows: repeat(6, 200px);
@@ -23,12 +23,12 @@
     }
 }
 
-.gallery > .gallery__list > li > figure {
+.gallery > .galleryList > li > figure {
   height: 100%;
   border-radius: 1rem;
 }
 
-.gallery > .gallery__list > li > figure > img {
+.gallery > .galleryList > li > figure > img {
   border-radius: 1rem;
   width: 100%;
   height: 100%;

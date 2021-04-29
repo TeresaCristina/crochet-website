@@ -13,7 +13,7 @@ import { InstagramComponent } from './blog/instagram/instagram.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
-import { PinterestComponent } from './blog/pinterest/pinterest.component';
+
 
 
 @NgModule({
@@ -26,7 +26,6 @@ import { PinterestComponent } from './blog/pinterest/pinterest.component';
     GalleryComponent,
     BlogComponent,
     BlogCardComponent,
-    PinterestComponent
   ],
   imports: [
     BrowserModule,

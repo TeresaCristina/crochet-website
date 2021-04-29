@@ -11,6 +11,7 @@ import { BlogComponent } from './blog/blog.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'gallery', component: GalleryComponent },
+  { path: 'gallery/:name', component: GalleryComponent },
   { path: 'blog', component: BlogComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
