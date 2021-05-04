@@ -4,6 +4,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import * as figures from '../../assets/global/figures';
+declare const shuffle: any;
+declare const select: any;
 
 class Figures {
   link: string = "";
@@ -20,26 +22,23 @@ class Figures {
 export class GalleryComponent implements OnInit {
 
   figLinks: Array<Figures> = figures.figLinks;
-
+  filtFigLinks: Array<Figures> = [{ link: "", alt: "", cat: "" }]
   name: string = "";
 
   constructor(private activatedRoute: ActivatedRoute) {
-    this.name = this.activatedRoute.snapshot.paramMap.get('name') || "";
-    this.name = this.name.toLowerCase();
+    this.activatedRoute.params.subscribe(routeParams => {
+      this.name = routeParams.name;
+      if (this.name === "All") {
+        this.filtFigLinks = figures.figLinks;
+      } else {
+        this.filtFigLinks = select(this.figLinks, this.name);
+      }
+      shuffle(this.filtFigLinks);
+    });
   }
 
-  ngOnInit(): void {
-    this.shuffle(this.figLinks);
-  }
+  ngOnInit(): void { }
 
-  shuffle(originalArray: Array<Figures>) {
-    for (let i = originalArray.length - 1; i > 0; i--) {
-      const index = Math.floor(Math.random() * (i + 1));
-      [originalArray[i], originalArray[index]] = [originalArray[index], originalArray[i]];
-    }
-  }
 
-  select(originalArray: Array<Figures>, category: string) {
-    let filtered = originalArray.filter(function (figure) { return figure.cat == category; });
-  }
+  
 }

@@ -155,7 +155,7 @@ export const baskets = [{
     link: "https://lh3.googleusercontent.com/pw/ACtC-3c7MYMPJhqGtUiAHylxZhcuOpmIH84-snWE5_e7-EXjYN97Ia8D3Jq30d6TbUdQuVLlvHXu77-_Bcy2H0-55eWmNDLubn97ryt1ZMq1NX6BJR7ZnpknrfUbjmZKsxZFGYu_aoJfJ8tjMWU7hSJU6J_H=w650-h981-no",
     alt: ""
     , cat: "Baskets"
-}, {
+},{
     link: "https://lh3.googleusercontent.com/pw/ACtC-3ePGCaotJCW6WUC49VoJa-tQbpukq23iUcmg9li8_Sgk8uPUf04sTbvm_Lkud61Xuc2FWnDz_6v9fHiSi00IZR2zaY4oWGhX7S5sYdhDpeqbreqiEyyfDDlHpS1-y-_Dmf0Id1WYqX2VU2wzVQxzHy3=w1482-h981-no",
     alt: ""
     , cat: "Baskets"
@@ -163,7 +163,7 @@ export const baskets = [{
     link: "https://lh3.googleusercontent.com/pw/ACtC-3eVhYYELupW9IOzvtmfBVSxs5sRgJSgOv64euEngW5VoIraWQe4xwsVAcO-jWerqSrHHK6cLLk0Wsz527rWS7-NG-2GvGP7sAFHI3mg_-t5aQlk8PvXxdtg-XRsP12fmN7BoS23NBI3UELP35ov3pd5=w1482-h981-no",
     alt: ""
     , cat: "Baskets"
-}, {
+},{
     link: "https://lh3.googleusercontent.com/pw/ACtC-3flo_nOGd52w4CjsjEtjWL_KK27OqWri1g1G9CKjp8aKowyRBwoaEgYnz8ACZXmHXtsngEbQdQoKLd6Wt9R1MTM4b_EPg8_pGY5DNzme8FalE0xJcR3vETQj8QFm_DAvIyUuthbpit2uBTNREMv1Dzd=w1482-h981-no",
     alt: ""
     , cat: "Baskets"
@@ -173,4 +173,4 @@ export const baskets = [{
     , cat: "Baskets"
 }]
 
-export const figLinks = [...rugs,...decor,...squares,...tricotin,...sousplat,...flowers]
+export const figLinks = [...rugs,...decor,...squares,...tricotin,...sousplat,...flowers,...baskets]
